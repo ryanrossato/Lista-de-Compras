@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/config.js"></script>
+    
+
+    <title>Lista de Tarefas</title>
+</head>
+
+<body>
+    <h1>Lista de Compras</h1>
+ <!--PRODUTO-->
+    <label id="lp">Produto / quantidade / unidade medida</label>
+    <input type="text" id="produto" size="45" placeholder="produto" value=""><br>
+    
+
+
+    <button onclick="adicionarProduto()" onclick="adicionarProdutosNaTela()" type="submit" id="add">Adicionar</button>
+   
+
+
+    <fieldset>
+        <legend>Lista</legend>
+        <div id="lista-de-produtos" class="produtos-container"></div>
+        <ul id="lista-de-produtos"></ul>
+
+    </fieldset>
+
+
+ <!--<button onclick="lixeira()" type="submit" id="lixeira">lixeira</button>-->
+<img id="lixeira" class="lixeira" src="lixeira-removebg-preview.png" onclick="limparLista()">
+
+
+</body>
+</html>

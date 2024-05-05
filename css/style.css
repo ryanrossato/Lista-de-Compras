@@ -1,0 +1,116 @@
+#lp{
+    position: absolute; /* Posicionamento absoluto */
+    top: 25%; /* 50% do topo */
+    left: 50%; /* 50% da esquerda */
+    transform: translate(-50%, -50%); /* Translada a div de volta -50% do seu próprio tamanho em ambas as direções */
+    
+}
+/* INPUT */
+#produto{ 
+    position: absolute; /* Posicionamento absoluto */
+    top: 30%; /* 50% do topo */
+    left: 50%; /* 50% da esquerda */
+    transform: translate(-50%, -50%); /* Translada a div de volta -50% do seu próprio tamanho em ambas as direções */
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: black;
+    width: 300px;
+    height: 30px;
+    font-size: large;
+}
+/* BOTÃO */
+#add{ 
+    position: absolute; /* Posicionamento absoluto */
+    top: 30%; /* 50% do topo */
+    left: 70%; /* 75% da esquerda */
+    transform: translate(-50%, -50%); /* Translada a div de volta -50% do seu próprio tamanho em ambas as direções */
+    border: solid 2px;
+    border-color: black;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    font-size: 30px;
+
+}
+/* TÍTULO */
+h1{
+    position: absolute; /* Posicionamento absoluto */
+    top: 5%; /* 5% do topo */
+    left: 50%; /* 50% da esquerda */
+    transform: translate(-50%, -50%); /* Translada a div de volta -50% do seu próprio tamanho em ambas as direções */
+}
+
+:placeholder-shown{
+font-size: larger;
+}
+
+fieldset{
+    position: absolute; /* Posicionamento absoluto */
+    top: 65%; /* 50% do topo */
+    left: 50%; /* 50% da esquerda */
+    transform: translate(-50%, -50%); /* Translada a div de volta -50% do seu próprio tamanho em ambas as direções */
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: black;
+    width: 850px;
+    height: 350px;
+}
+legend{
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#lista-de-produtos{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaço entre os elementos */
+}
+
+.produtos-container > * {
+    flex-grow: 1; /* Distribui os itens igualmente na linha */
+    min-width: 100px; /* Largura mínima dos itens */
+}
+/*
+#limparForm{
+    position: absolute; 
+    top: 90%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);  border: solid 2px;
+    border-color: black;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    font-size: 30px;
+
+}
+*/
+img{
+    position: absolute; /* Posicionamento absoluto */
+    top: 50%; /* 50% do topo */
+    left: 90%; /* 75% da esquerda */
+    transform: translate(-50%, -50%); /* Translada a div de volta -50% do seu próprio tamanho em ambas as direções */
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.lixeira:hover {
+    /* Adicione estilos para quando o mouse passar por cima */
+    filter: brightness(1.2); /* Por exemplo, aumenta o brilho da imagem */
+    background-color: #33a325; /* verde */
+   
+}
+
+.lixeira.clicked {
+    /* Adicione estilos para quando a lixeira é clicada */
+    filter: grayscale(100%); 
+    transform: rotate(10deg); /* Rotaciona 10 graus */
+    transition: transform 0.3s ease; /* Transição suave de 0.3 segundos */
+}
